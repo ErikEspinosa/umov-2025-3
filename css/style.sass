@@ -64,7 +64,7 @@ a
 
 .container
     width: 100%
-    max-width: 1180px
+    max-width: 940px
     margin: 0 auto
     @include tablet
         max-width: 720px
@@ -327,7 +327,7 @@ a
         padding-bottom: 140px
     .footer-main-grid
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(3, 1fr)
         gap: 20px
         padding: 58px 0 43px 0
         border-bottom: 1px solid #8361ff
@@ -492,7 +492,7 @@ a
            background-color: #162990
            border-radius: 28px
            padding: 10px 30px
-           margin: 0 10px 10px 0
+           margin: 0 8px 10px 0
            font-size: 14px
            font-weight: 600
            color: #fff
@@ -535,7 +535,7 @@ a
             .statics-grid
                 background-color: #e9eafb
                 display: grid
-                grid-template-columns: repeat(4, 1fr)
+                grid-template-columns: repeat(3, 1fr)
                 gap: 20px
                 padding: 55px 20px
                 @include tablet
@@ -637,175 +637,146 @@ a
             color: rgba(0, 0, 0, 0.85)
             padding: 10px 20px
             box-sizing: border-box
-    .careers-grid
-        display: grid
-        grid-template-columns: 280px auto
-        gap: 20px
-        @include tablet
-            display: block
-        @include mobile
-            display: block
-        .careers-item-sidebar
+    .careers-item-list
+        h2
+            font-size: 24px
+            font-weight: 600
+            color: #4548de
+            margin: 0 0 21px 0
             @include tablet
                 display: none
             @include mobile
                 display: none
-            h3
-                font-size: 14px
-                font-weight: 500
-                color: #000
-                margin: 0 0 10px 0
-            ul
-                list-style: none
-                margin: 0
-                padding: 0
-                li
-                    margin: 0 0 10px
-                    a
-                      font-size: 14px
-                      color: #565656
-            .careers-item-sidebar-divider
-                width: 100%
-                height: 1px
-                background-color: #e4e4e4
-                margin: 20px 0
-        .careers-item-list
-            h2
-                font-size: 24px
-                font-weight: 600
-                color: #4548de
-                margin: 0 0 21px 0
-                @include tablet
-                    display: none
-                @include mobile
-                    display: none
-            .careers-list-grid
-                display: none
-                grid-template-columns: repeat(3, 1fr)
-                gap: 20px
-                margin-bottom: 40px
-                @include tablet
-                    grid-template-columns: repeat(2, 1fr)
-                @include mobile
-                    grid-template-columns: repeat(1, 1fr)
-                .careers-list-item
-                    position: relative
-                    border-radius: 8px
-                    box-shadow: 0 0 5px 2px rgba(122, 117, 184, 0.33)
-                    color: #fff
-                    &.hide-tablet
-                        @include tablet
-                            display: none
-                    &.hide-mobile
-                        @include mobile
-                            display: none
-                    .careers-list-item-image-desktop
-                        display: block
-                        border: 0
-                        @include tablet
-                            display: none
-                        @include mobile
-                            display: none
-                    .careers-list-item-image-mobile
-                        display: none
-                        border: 0
-                        @include tablet
-                            display: block
-                        @include mobile
-                            display: block
-                    .careers-list-item-content
-                        padding: 20px 20px 11.8px 20px
-                        @include mobile
-                            padding: 20px
-                        h3
-                            font-size: 14px
-                            font-weight: 600
-                            color: #000
-                            line-height: normal
-                            margin: 0 0 10px 0
-                        p
-                            font-size: 14px
-                            line-height: normal
-                            letter-spacing: -0.44px
-                            color: #6d7278
-                            margin: 0 0 10px 0
-                        .careers-list-item-link
-                            display: block
-                            font-size: 14px
-                            font-weight: 600
-                            letter-spacing: -0.56px
-                            color: #3a16b7
-                            text-decoration: underline
-                            margin: 0 0 20px 0
-                            @include tablet
-                                letter-spacing: -0.44px
-                            @include mobile
-                                letter-spacing: -0.44px
-                        .careers-list-item-button
-                            display: block
-                            width: 100%
-                            height: 40px
-                            border-radius: 4px
-                            background-color: #502dcf
-                            font-size: 14px
-                            font-weight: 500
-                            letter-spacing: -0.44px
-                            color: #fff
-                            text-align: center
-                            line-height: 2.8
-                            @include tablet
-                                width: 240px
-                                margin: 0 auto
-                            &:hover
-                                background-color: #5324ff
-                                box-shadow: 0 0 5px 2px rgba(122, 117, 184, 0.33)
-                                border-radius: 8px
-                                text-decoration: none
-                    .careers-list-item-badge
-                        position: absolute
-                        right: 10px
-                        top: 125px
-                        width: 120px
-                        height: 20px
-                        border-radius: 10px
-                        background-color: #fa6400
-                        font-size: 10px
-                        font-weight: 600
-                        color: #fff
-                        text-align: center
-                        line-height: 2
-                        @include tablet
-                            top: 120px
-                        @include mobile
-                            top: 120px
-            .careers-list-button
-                display: block
-                width: 280px
-                height: 50px
+        .careers-list-grid
+            display: none
+            grid-template-columns: repeat(3, 1fr)
+            gap: 20px
+            margin-bottom: 40px
+            @include tablet
+                grid-template-columns: repeat(2, 1fr)
+            @include mobile
+                grid-template-columns: repeat(1, 1fr)
+            .careers-list-item
+                position: relative
                 border-radius: 8px
-                background-color: #fa6400
-                font-size: 16px
-                font-weight: 600
+                box-shadow: 0 0 5px 2px rgba(122, 117, 184, 0.33)
                 color: #fff
-                text-align: center
-                line-height: 3.2
-                margin: 0 auto
-                &.hide-desktop
+                &.hide-tablet
+                    @include tablet
+                        display: none
+                &.hide-mobile
+                    @include mobile
+                        display: none
+                .careers-list-item-image-desktop
+                    display: block
+                    width: 100%
+                    height: auto
+                    border: 0
+                    @include tablet
+                        display: none
+                    @include mobile
+                        display: none
+                .careers-list-item-image-mobile
                     display: none
+                    border: 0
                     @include tablet
                         display: block
                     @include mobile
                         display: block
-                &:hover
-                    background-color: #ff5c18
-                    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5)
-                    text-decoration: none
+                .careers-list-item-content
+                    padding: 20px 20px 11.8px 20px
+                    @include mobile
+                        padding: 20px
+                    h3
+                        font-size: 14px
+                        font-weight: 600
+                        color: #000
+                        line-height: normal
+                        margin: 0 0 10px 0
+                    p
+                        font-size: 14px
+                        line-height: normal
+                        letter-spacing: -0.44px
+                        color: #6d7278
+                        margin: 0 0 10px 0
+                    .careers-list-item-link
+                        display: block
+                        font-size: 14px
+                        font-weight: 600
+                        letter-spacing: -0.56px
+                        color: #3a16b7
+                        text-decoration: underline
+                        margin: 0 0 20px 0
+                        @include tablet
+                            letter-spacing: -0.44px
+                        @include mobile
+                            letter-spacing: -0.44px
+                    .careers-list-item-button
+                        display: block
+                        width: 100%
+                        height: 40px
+                        border-radius: 4px
+                        background-color: #502dcf
+                        font-size: 14px
+                        font-weight: 500
+                        letter-spacing: -0.44px
+                        color: #fff
+                        text-align: center
+                        line-height: 2.8
+                        @include tablet
+                            width: 240px
+                            margin: 0 auto
+                        &:hover
+                            background-color: #5324ff
+                            box-shadow: 0 0 5px 2px rgba(122, 117, 184, 0.33)
+                            border-radius: 8px
+                            text-decoration: none
+                .careers-list-item-badge
+                    position: absolute
+                    right: 30px
+                    top: 135px
+                    width: 120px
+                    height: 20px
+                    border-radius: 10px
+                    background-color: #fa6400
+                    font-size: 10px
+                    font-weight: 600
+                    color: #fff
+                    text-align: center
+                    line-height: 2
+                    @include tablet
+                        top: 120px
+                    @include mobile
+                        top: 120px
+                        right: 10px
+        .careers-list-button
+            display: block
+            width: 280px
+            height: 50px
+            border-radius: 8px
+            background-color: #fa6400
+            font-size: 16px
+            font-weight: 600
+            color: #fff
+            text-align: center
+            line-height: 3.2
+            margin: 0 auto
+            &.hide-desktop
+                display: none
+                @include tablet
+                    display: block
                 @include mobile
-                    width: 224px
-                    height: 40px
-                    border-radius: 4px
-                    font-size: 14px
-                    line-height: 3
+                    display: block
+            &:hover
+                background-color: #ff5c18
+                box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5)
+                text-decoration: none
+            @include mobile
+                width: 224px
+                height: 40px
+                border-radius: 4px
+                font-size: 14px
+                line-height: 3
 
 .testimonials
     background: linear-gradient(242deg, #8c62f4, #060e64)
@@ -813,8 +784,10 @@ a
         background: linear-gradient(144deg, #060e64, #8c62f4)
     .testimonials-grid
         display: grid
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: 33% 66%
         gap: 20px
+        @include tablet
+            grid-template-columns: repeat(2, 1fr)
         @include mobile
             display: block
         .testimonials-students
@@ -849,6 +822,7 @@ a
                     @include mobile
                         font-size: 12px
                         letter-spacing: -0.38px
+                        line-height: normal
             .testimonials-students-card
                 display: none
                 @include mobile
@@ -872,17 +846,12 @@ a
                         color: #6d7278
                         margin: 0
             .testimonials-students-images
-                display: grid
-                grid-template-columns: repeat(2, 1fr)
-                gap: 20px
                 @include tablet
                     display: block
                 @include mobile
                     gap: 12px
                 .testimonials-students-image
                     @include tablet
-                        &:first-of-type
-                            display: none
                         img
                             width: 100%
                             height: auto
@@ -927,6 +896,7 @@ a
                     background-color: #fff
                     border-radius: 8px
                     padding: 28px 26px 40px 26px
+                    box-sizing: border-box
                     @include tablet
                         padding: 30px 20px 40px 20px
                     .testimonials-cards-item-content
@@ -1146,7 +1116,7 @@ a
     .agreements-grid
         display: grid
         grid-template-columns: repeat(5, 1fr)
-        gap: 70px
+        gap: 40px
         margin-bottom: 51px
         @include tablet
             gap: 30px
@@ -1225,19 +1195,19 @@ a
                 @include scroll-wrapper
             .press-grid
                 display: grid
-                grid-template-columns: repeat(4, 1fr)
+                grid-template-columns: repeat(3, 1fr)
                 gap: 20px
                 .press-item
                     .press-item-image
                         display: block
                         margin-bottom: 9px
                         @include tablet
-                            width: 165px
-                            height: 165px
+                            width: 100%
+                            height: auto
                             margin-bottom: 4px
                         @include mobile
-                            width: 150px
-                            height: 150px
+                            width: 100%
+                            height: auto
                             margin-bottom: 7px
                     .press-item-subtitle
                         display: block
@@ -1313,14 +1283,14 @@ a
         .contact-item-form
             background-color: #398ef7
             color: #fff
-            padding: 35px 20px 0 20px
+            padding: 60px 20px 0 20px
             border-radius: 8px
             @include tablet
                 padding: 23px 15px 0 15px
             @include mobile
                 padding: 23px 15px 31px 15px
             h2.contact-item-form-title
-                font-size: 36px
+                font-size: 24px
                 font-weight: 500
                 margin: 0 0 5px 0
                 @include tablet
@@ -1339,8 +1309,9 @@ a
                 @include mobile
                     display: block
             p
-                font-size: 16px
+                font-size: 14px
                 font-weight: 500
+                line-height: normal
                 letter-spacing: -0.5px
                 color: #f6f3ff
                 margin: 0 0 21px 0
@@ -1361,9 +1332,9 @@ a
                     letter-spacing: -0.57px
                     color: #f6f3ff
                 .contact-form-item-benefits
-                    font-size: 18px
-                    line-height: 2.17
-                    padding: 30px 30px 0 30px
+                    font-size: 16px
+                    line-height: 2.5
+                    padding: 0 10px 0 0
                     border-right: 1px solid #a3c7fa
                     @include tablet
                         display: none
@@ -1399,7 +1370,7 @@ a
                             width: 10px
                             height: 10px
                 .contact-form-item-form
-                    padding: 30px 30px 0 30px
+                    padding: 0 0 0 20px
                     box-sizing: border-box
                     @include tablet
                         padding: 0
@@ -1408,9 +1379,9 @@ a
                     form
                         input, select
                             display: block
-                            width: 356px
+                            width: 100%
                             height: 40px
-                            border-radius: 25px
+                            border-radius: 8px
                             background-color: #fff
                             font-size: 14px
                             letter-spacing: -0.44px
@@ -1432,9 +1403,9 @@ a
                                 padding: 10px 20px
                         button
                             display: block
-                            width: 183px
-                            height: 40px
-                            border-radius: 25px
+                            width: 100%
+                            height: 50px
+                            border-radius: 8px
                             background-color: #162990
                             font-size: 14px
                             font-weight: 500
