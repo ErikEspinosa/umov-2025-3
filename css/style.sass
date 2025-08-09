@@ -1035,10 +1035,10 @@ a
                 margin-left: 5.6px
             h2
                 color: #fff
-                font-size: 36px
+                font-size: 27px
                 font-weight: 500
                 line-height: normal
-                letter-spacing: -1.13px
+                letter-spacing: -0.85px
                 margin: 0
                 @include tablet
                     font-size: 29px
@@ -1581,7 +1581,7 @@ a
         @include mobile
             display: block
         .certificate-image
-            margin-right: 52.6px
+            margin-right: 20px
             @include tablet
                 margin-right: 16.6px
             @include mobile
@@ -1595,7 +1595,7 @@ a
                 font-weight: 500
                 line-height: normal
                 color: #fff
-                margin: 0 0 25px 0
+                margin: 0 0 20px 0
                 @include mobile
                     font-size: 14px
             .certificate-button
@@ -1639,7 +1639,7 @@ a
         color: #6236ff
     .profile-grid
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(3, 1fr)
         gap: 20px
         @include tablet
             grid-template-columns: repeat(2, 1fr)
@@ -1728,7 +1728,7 @@ a
                 @include scroll-wrapper
             .why-study-grid
                 display: grid
-                grid-template-columns: repeat(4, 1fr)
+                grid-template-columns: repeat(3, 1fr)
                 gap: 20px
                 .why-study-item
                     background-color: rgba(255, 255, 255, 0.6)
@@ -1816,6 +1816,25 @@ a
         @include mobile
             width: 100%
             margin-bottom: 30px
+        h2
+            font-weight: normal
+            margin: 0
+            .description-content-title-small
+                font-size: 18px
+                font-weight: 500
+                color: #060e64
+                margin-bottom: 5px
+            .description-content-title
+                font-size: 36px
+                font-weight: 600
+                color: #303030
+                @include mobile
+                    font-size: 24px
+        .description-content-divider
+            background-color: #162990
+            width: 105px
+            height: 1px
+            margin: 20px 0
         p
             font-size: 16px
             line-height: normal
@@ -1880,6 +1899,7 @@ a
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    min-height: 550px
     @include tablet
         padding: 30px 0 122.6px 0
     @include mobile
@@ -1904,6 +1924,7 @@ a
                 display: none
                 @include tablet
                     display: block
+                    height: auto
                 @include mobile
                     display: block
                     width: 100%
@@ -1948,7 +1969,7 @@ a
                     line-height: normal
         .hero-detail-form
             background-color: #fff
-            padding: 20px 20px 47px 20px
+            padding: 20px
             border-radius: 8px
             border: solid 1px #866de0
             @include tablet
@@ -1965,7 +1986,7 @@ a
             ul
                 list-style: none
                 margin: 0
-                margin-bottom: 56px
+                margin-bottom: 20px
                 padding: 0
                 @include tablet
                     margin-bottom: 30px
@@ -2007,7 +2028,7 @@ a
                     font-size: 14px
                     letter-spacing: -0.4px
                     color: #000
-                    margin-bottom: 10px
+                    margin-bottom: 20px
                     &:last-of-type
                         margin-bottom: 20px
                         @include tablet
@@ -2016,7 +2037,7 @@ a
                             margin-bottom: 30px
                 button
                     display: block
-                    width: 199px
+                    width: 100%
                     height: 40px
                     border: none
                     border-radius: 8px
@@ -2027,6 +2048,9 @@ a
                     text-align: center
                     color: #fff
                     margin: 0 auto
+                    cursor: pointer
+                    &:hover
+                        text-decoration: underline
                     @include tablet
                         width: 100%
                         height: 50px
@@ -2098,6 +2122,9 @@ a
             font-weight: 500
             margin: 0 auto
             cursor: pointer
+            &:hover
+                background-color: #5324ff
+                text-decoration: none
 
 .why-choose
     background: url('../assets/why-choose-bg.webp')
@@ -2113,6 +2140,8 @@ a
         letter-spacing: -1.13px
         color: #000000d9
         margin: 0 0 40px 0
+        @include mobile
+            font-size: 24px
     .why-choose-highlight
         color: #6236ff
     .why-choose-grid
